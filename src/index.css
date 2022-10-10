@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Mogra&display=swap');
+
+* {
+  font-family: 'Mogra', cursive;
+  margin: 0;
+  font-size: 20px;
+}
+
+body {
+   background-image: url(./img/pens.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center 0;
+   
+}
+
+th {
+  color: SlateBlue ;
+  font-size: larger;
+  background-color: rgb(231, 224, 238);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.4em;
+  color: Coral;
+}
+
+.tabela {
+  color: DarkSlateBlue;
+  width: 100vw;
+  overflow-x:auto;
+  height: 650px; 
+}
+
+table {
+  width: 100vw;
+}
+
+th {
+  padding: 0.5rem;
+}
+
+td {
+  padding: 0.3rem;
+  border: 1px solid rgb(36, 31, 31);
+  width: 16.6vw;
+}
+
+tr {
+  text-align: center;
+}
+tr:hover { 
+  background-color: LemonChiffon ;
+  opacity: 0.8;   
+  cursor: pointer;
+}
+
+table, th, td {
+  border: 1.5px solid rgb(120, 38, 150);
+  border-collapse: collapse;
+}
+
+input {
+  outline: none;
+  border-radius: 4px;
+  width: 90%;
+  margin: 0;
+  padding: 2px;
+  color: rebeccapurple;
+  border: 2px solid rgb(120, 38, 150);
+}
+
+input:hover { 
+  background-color: yellowgreen;
+  border: 2px solid green;
+  opacity: 0.9;  
+  color: LemonChiffon ;
+}
+
+button {
+  border-radius: 6px;
+  cursor: pointer;
+  border: 2px solid rgb(120, 38, 150);
+  color: indigo;
+}
+
+button:active {  
+  transform: translate(2px, 2px);
+}
+
+button:hover { 
+  background-color: blue;
+  border: 2px solid blue;
+  opacity: 0.5;
+  color: azure;  
+}
+
+.add-new-menu {  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0px 40px 0px; 
+}
+
+.add-new-menu button {
+  margin-top: 20px;
+  padding: 10px;
+  width: 80%;
+  color: coral;
+  font-size: 30px;
+}
+.add-new-menu input {
+  padding: 20px;
+  width: 80%;
+}
+
+#add-new-contact {
+  background-color: olivedrab;
+  color: #fff;
+  border: none;
+  padding: 10px;
+}
+
+.main-parent {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-btn {
+  padding: 6px;
+  background-color: burlywood;
+  color: darkolivegreen;  
+  border: 2px solid burlywood;
+  display: flex;
+  justify-content: center;  
+  width: 20%;
+  margin: 6px;
+}
+
+.search {
+  padding: 6px;
+  width: 50%;
+  margin: 6px;
+  background-color: azure;
+}
+
+.main-btn:hover {
+  background-color: rebeccapurple;
+  color: aliceblue;  
+  border: 2px solid rebeccapurple;
+}
+
+.main-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./img/main.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;  
+}
+
+.main-page-contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.4;
+  height: 100px;
+  width: 20%;
+  font-size: 30px;
+}
+
+.main-page-add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.4;
+  height: 100px;
+  width: 30%;
+  font-size: 30px;
+}
+
+.main-page-contacts:hover , .main-page-add:hover {
+  opacity: 1;
+  cursor: pointer;
+  color: #553C2A;
+}
+
+@media screen and (max-width: 420px) {
+  .main-page {
+    flex-direction: column;
+    background-image: url(./img/mainalt.jpg);
+  }
+  .main-page-contacts{
+    font-size: 20px;
+    width: 20%;    
+  }
+  .main-page-add {
+    font-size: 20px;
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 920px) and (min-width: 421px) {
+  .main-page-contacts{
+    font-size: 20px;
+    width: 20%;
+    margin: 5px;
+  }
+  .main-page-add {
+    font-size: 20px;
+    width: 25%;
+    margin: 5px;
+  }
+}
