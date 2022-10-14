@@ -123,7 +123,8 @@ const handleAddReset = () => {
             <div className="tabela"  style={{display: "none"}}>
                 <div className="main-parent">
                     <button className="main-btn" onClick={goOnMain}>Main Page</button>
-                    <input id="search" className="search" onKeyUp={searchTable} placeholder="Search by name"></input>
+                    <input id="search" className="search" onKeyUp={searchTable} placeholder="Search..."></input>
+                    <button id="add-new-contact" onClick={goOnAddNew}>Add new +++</button>
                 </div>               
                 <table id="table">
                     <thead>
@@ -133,7 +134,7 @@ const handleAddReset = () => {
                         <th>Address</th>
                         <th>Phone</th>
                         <th>Email</th> 
-                        <th><button id="add-new-contact" onClick={goOnAddNew}>Add new +++</button></th>  
+                        <th>&#128229; or &#10062;</th>  
                     </tr>
                     </thead>
 
