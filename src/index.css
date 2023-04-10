@@ -10,8 +10,7 @@ body {
    background-image: url(./img/pens.png);
    background-repeat: no-repeat;
    background-size: cover;
-   background-position: center 0;
-   
+   background-position: center 0;   
 }
 
 th {
@@ -29,7 +28,7 @@ h1 {
 .tabela {
   color: DarkSlateBlue;
   width: 100vw;
-  overflow-x:auto;
+  overflow-x: auto;
   height: 650px; 
 }
 
@@ -206,6 +205,42 @@ button:hover {
     font-size: 20px;
     width: 20%;
   }
+  body {
+    height: 140vh;
+  }
+  .tabela {
+    height: 100vh;
+  }  
+ /* Dodato da bi tabela promenila oblik kada je manji ekran*/
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  table {
+    border: none;
+  }
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  tr {
+    margin: 0 0 1rem 0;
+  }
+  td {
+      border: 1px solid black;
+    position: relative;
+    width: 90%;
+    margin-left: 3vw;
+  }
+  td:before {
+    position: absolute;   
+    top: 0;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+/* - */
 }
 
 @media screen and (max-width: 920px) and (min-width: 421px) {
@@ -219,4 +254,40 @@ button:hover {
     width: 25%;
     margin: 5px;
   }
+  body {
+    height: 140vh;
+  }
+  .tabela {
+    height: 100vh;
+  }
+ /* Dodato da bi tabela promenila oblik kada je manji ekran*/
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  table {
+    border: none;
+  }
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  tr {
+    margin: 0 0 1rem 0;
+  }
+  td {
+    border: 1px solid black;
+    position: relative;
+    width: 90%;
+    margin-left: 4vw;
+  }
+  td:before {
+    position: absolute;
+    top: 0;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+  /* - */
 }
